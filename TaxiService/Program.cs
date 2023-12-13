@@ -1,5 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Globalization;
 using System.Runtime.CompilerServices;
+using TaxiService.Data;
+using TaxiService.Models;
 using TaxiService.Services;
 
 [assembly: InternalsVisibleTo("TaxiService.Tests")]
@@ -25,10 +29,22 @@ namespace TaxiService
         {
             string startLocation = "Edmonton";
             string endLocation = "Calgary";
-            
-            // TODO: Given a driver perform the trip from Edmonton to Calgary.
 
-            Console.WriteLine($"The trip between {startLocation} and {endLocation} is complete!");
+            List<Driver>drivers = new DriverStore().Drivers;
+
+            // Given a driver perform the trip from Edmonton to Calgary.
+            foreach(var driver in drivers)
+            {
+                Console.WriteLine("-------------------------------------------");
+                Trip trip = new Trip(driver);
+                trip.Start(startLocation, endLocation);
+                trip.Complete();
+                Console.WriteLine("-------------------------------------------");
+
+            }
+
         }
+
+        
     }
 }

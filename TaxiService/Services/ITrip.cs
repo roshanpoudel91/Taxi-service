@@ -26,5 +26,7 @@ namespace TaxiService.Services
         /// <param name="startLocation">The starting location of the trip.</param>
         /// <param name="endLocation">THe ending location of the trip.</param>
         public void Start(string startLocation, string endLocation);
+
+        public void Complete();
     }
 }
