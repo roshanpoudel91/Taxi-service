@@ -1,0 +1,16 @@
+D:\Roshan\TaxiService\TaxiService\TaxiService\bin\Debug\net5.0\TaxiService.exe
+D:\Roshan\TaxiService\TaxiService\TaxiService\bin\Debug\net5.0\TaxiService.deps.json
+D:\Roshan\TaxiService\TaxiService\TaxiService\bin\Debug\net5.0\TaxiService.runtimeconfig.json
+D:\Roshan\TaxiService\TaxiService\TaxiService\bin\Debug\net5.0\TaxiService.runtimeconfig.dev.json
+D:\Roshan\TaxiService\TaxiService\TaxiService\bin\Debug\net5.0\TaxiService.dll
+D:\Roshan\TaxiService\TaxiService\TaxiService\bin\Debug\net5.0\TaxiService.pdb
+D:\Roshan\TaxiService\TaxiService\TaxiService\obj\Debug\net5.0\TaxiService.csproj.AssemblyReference.cache
+D:\Roshan\TaxiService\TaxiService\TaxiService\obj\Debug\net5.0\TaxiService.GeneratedMSBuildEditorConfig.editorconfig
+D:\Roshan\TaxiService\TaxiService\TaxiService\obj\Debug\net5.0\TaxiService.AssemblyInfoInputs.cache
+D:\Roshan\TaxiService\TaxiService\TaxiService\obj\Debug\net5.0\TaxiService.AssemblyInfo.cs
+D:\Roshan\TaxiService\TaxiService\TaxiService\obj\Debug\net5.0\TaxiService.csproj.CoreCompileInputs.cache
+D:\Roshan\TaxiService\TaxiService\TaxiService\obj\Debug\net5.0\TaxiService.dll
+D:\Roshan\TaxiService\TaxiService\TaxiService\obj\Debug\net5.0\refint\TaxiService.dll
+D:\Roshan\TaxiService\TaxiService\TaxiService\obj\Debug\net5.0\TaxiService.pdb
+D:\Roshan\TaxiService\TaxiService\TaxiService\obj\Debug\net5.0\TaxiService.genruntimeconfig.cache
+D:\Roshan\TaxiService\TaxiService\TaxiService\obj\Debug\net5.0\ref\TaxiService.dll
