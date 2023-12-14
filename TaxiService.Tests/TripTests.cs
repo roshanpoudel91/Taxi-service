@@ -36,7 +36,7 @@ namespace TaxiService.Tests
 
             Trip trip = new Trip(driver);
 
-            bool isValid = trip.IsValidTrip(startLocation) && trip.IsValidTrip(endLocation);
+            bool isValid = trip.IsValidTrip(startLocation,endLocation);
 
             Assert.AreEqual(expectedResult, isValid, $":startLocation{startLocation},endLocation{endLocation},Expected:{expectedResult}");
 

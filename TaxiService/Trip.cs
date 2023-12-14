@@ -26,7 +26,7 @@ namespace TaxiService
         public void Start(string startLocation, string endLocation)
         {
             // check if trip is between Edmonton and Calgary
-            if (!(IsValidTrip(startLocation) && IsValidTrip(endLocation)) || startLocation == endLocation)
+            if (!IsValidTrip(startLocation,endLocation))
             {
                 Console.WriteLine("Error: Trip should be between Edmonton and Calgary only.");
                 return;
@@ -74,10 +74,16 @@ namespace TaxiService
 
         }
 
-        public bool IsValidTrip(string location)
+        public bool IsValidTrip(string startLocation, string endLocation)
         {
-            return location.Equals("Edmonton", StringComparison.OrdinalIgnoreCase) ||
-                location.Equals("Calgary", StringComparison.OrdinalIgnoreCase);
+            if (startLocation == endLocation)
+            {
+                return false;
+            }
+            return (startLocation.Equals("Edmonton", StringComparison.OrdinalIgnoreCase) &&
+                endLocation.Equals("Calgary", StringComparison.OrdinalIgnoreCase)) ||
+                 (startLocation.Equals("Calgary", StringComparison.OrdinalIgnoreCase) &&
+                endLocation.Equals("Edmonton", StringComparison.OrdinalIgnoreCase));
         }
 
 
