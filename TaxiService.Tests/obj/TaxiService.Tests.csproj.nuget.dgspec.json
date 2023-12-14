@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Roshan\\TaxiService\\TaxiService\\TaxiService.Tests\\TaxiService.Tests.csproj": {}
+    "D:\\Roshan\\KBC\\Taxi-service\\TaxiService.Tests\\TaxiService.Tests.csproj": {}
   },
   "projects": {
-    "D:\\Roshan\\TaxiService\\TaxiService\\TaxiService.Tests\\TaxiService.Tests.csproj": {
+    "D:\\Roshan\\KBC\\Taxi-service\\TaxiService.Tests\\TaxiService.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Roshan\\TaxiService\\TaxiService\\TaxiService.Tests\\TaxiService.Tests.csproj",
+        "projectUniqueName": "D:\\Roshan\\KBC\\Taxi-service\\TaxiService.Tests\\TaxiService.Tests.csproj",
         "projectName": "TaxiService.Tests",
-        "projectPath": "D:\\Roshan\\TaxiService\\TaxiService\\TaxiService.Tests\\TaxiService.Tests.csproj",
+        "projectPath": "D:\\Roshan\\KBC\\Taxi-service\\TaxiService.Tests\\TaxiService.Tests.csproj",
         "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
-        "outputPath": "D:\\Roshan\\TaxiService\\TaxiService\\TaxiService.Tests\\obj\\",
+        "outputPath": "D:\\Roshan\\KBC\\Taxi-service\\TaxiService.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Roshan\\TaxiService\\TaxiService\\TaxiService\\TaxiService.csproj": {
-                "projectPath": "D:\\Roshan\\TaxiService\\TaxiService\\TaxiService\\TaxiService.csproj"
+              "D:\\Roshan\\KBC\\Taxi-service\\TaxiService\\TaxiService.csproj": {
+                "projectPath": "D:\\Roshan\\KBC\\Taxi-service\\TaxiService\\TaxiService.csproj"
               }
             }
           }
@@ -95,14 +95,14 @@
         }
       }
     },
-    "D:\\Roshan\\TaxiService\\TaxiService\\TaxiService\\TaxiService.csproj": {
+    "D:\\Roshan\\KBC\\Taxi-service\\TaxiService\\TaxiService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Roshan\\TaxiService\\TaxiService\\TaxiService\\TaxiService.csproj",
+        "projectUniqueName": "D:\\Roshan\\KBC\\Taxi-service\\TaxiService\\TaxiService.csproj",
         "projectName": "TaxiService",
-        "projectPath": "D:\\Roshan\\TaxiService\\TaxiService\\TaxiService\\TaxiService.csproj",
+        "projectPath": "D:\\Roshan\\KBC\\Taxi-service\\TaxiService\\TaxiService.csproj",
         "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
-        "outputPath": "D:\\Roshan\\TaxiService\\TaxiService\\TaxiService\\obj\\",
+        "outputPath": "D:\\Roshan\\KBC\\Taxi-service\\TaxiService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dell\\AppData\\Roaming\\NuGet\\NuGet.Config",

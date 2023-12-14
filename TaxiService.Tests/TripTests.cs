@@ -25,6 +25,22 @@ namespace TaxiService.Tests
                 Assert.AreEqual(expectedResult, isValid, $"Age:{age},Expected:{expectedResult}");
 
         }
+
+        [TestMethod]
+        [DataRow("Edmonton", "Calgary", true)]
+        [DataRow("Calgary", "Edmonton", true)]
+        [DataRow("Toronto", "Calgary", false)]
+        public void Trip_Start_LocationValid_AllCases(string startLocation, string endLocation, bool expectedResult)
+        {
+            Driver driver = new Driver();
+
+            Trip trip = new Trip(driver);
+
+            bool isValid = trip.IsValidTrip(startLocation) && trip.IsValidTrip(endLocation);
+
+            Assert.AreEqual(expectedResult, isValid, $":startLocation{startLocation},endLocation{endLocation},Expected:{expectedResult}");
+
+        }
     }
 
 }

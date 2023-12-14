@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TaxiService.Tests
-build_property.ProjectDir = D:\Roshan\TaxiService\TaxiService\TaxiService.Tests\
+build_property.ProjectDir = D:\Roshan\KBC\Taxi-service\TaxiService.Tests\
