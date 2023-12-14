@@ -31,11 +31,12 @@ namespace TaxiService.Models
                 return;
             }
             // check if driver's age is greater than 21 
-            if (Driver.Age < 21)
+            if (!checkDriverAge(Driver))
             {
                 Console.WriteLine($"Sorry, Driver: {Driver.Name}'s age should be greater than 21 to complete this trip.");
                 return;
             }
+            
 
             StartLocation = startLocation;
             EndLocation = endLocation;
@@ -43,6 +44,12 @@ namespace TaxiService.Models
             Console.WriteLine($"Trip started by Driver: {Driver.Name} from {startLocation} to {EndLocation}.");
             
         
+        }
+
+        public bool checkDriverAge(Driver driver)
+        {
+            return driver.Age >= 21 ? true : false;
+            
         }
 
         public void Complete()
