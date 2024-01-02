@@ -16,14 +16,12 @@ namespace TaxiService.Tests
         public void Trip_Start_MinimumAgeValid_AllCases(int age, bool expectedResult)
         {
             
-               /* Driver driver = new Driver { Age = age};
+                Driver driver = new Driver { Age = age};
 
-                TripService trip = new Trip(driver);
-
-                bool isValid = trip.checkDriverAge(driver);
+                bool isValid = driver.checkDriverAge();
 
                 Assert.AreEqual(expectedResult, isValid, $"Age:{age},Expected:{expectedResult}");
-*/
+
         }
 
         [TestMethod]
@@ -32,33 +30,38 @@ namespace TaxiService.Tests
         [DataRow("Toronto", "Calgary", false)]
         [DataRow("Calgary", "Calgary", false)]
         public void Trip_Start_LocationValid_AllCases(string startLocation, string endLocation, bool expectedResult)
-        {/*
-            Driver driver = new Driver();
+        {
+          
+            Trip trip = new Trip()
+            {
+               StartLocation = startLocation,
+               EndLocation = endLocation
+             };
 
-            TripService trip = new Trip(driver);
-
-            bool isValid = trip.IsValidTrip(startLocation,endLocation);
+            bool isValid = trip.isValidTrip();
 
             Assert.AreEqual(expectedResult, isValid, $":startLocation{startLocation},endLocation{endLocation},Expected:{expectedResult}");
-*/
+
         }
 
         [TestMethod]
-        [DataRow("Edmonton", "Calgary",21, true)]
-        [DataRow("Calgary", "Edmonton",20, false)]
-        [DataRow("Toronto", "Calgary",22, false)]
-        [DataRow("Calgary", "Calgary",20, false)]
+        [DataRow(1, false)]
+        [DataRow(2, false)]
+        [DataRow(3, true)]
+        [DataRow(100, true)]
 
-        public void Trip_StartCheck_AllCases(string startLocation, string endLocation,int age, bool expectedResult)
+        public void Trip_CheckTime_AllCases(int time, bool expectedResult)
         {
-           /* Driver driver = new Driver() { Age=age};
 
-            TripService trip = new Trip(driver);
+            Trip trip = new Trip()
+            {
+                TimeToComplete = time
+            };
 
-            bool isValid = trip.Start(startLocation, endLocation);
+            bool isValid = trip.checkTimeToComplete();
 
-            Assert.AreEqual(expectedResult, isValid, $":startLocation{startLocation},endLocation{endLocation},Expected:{expectedResult}");
-*/
+            Assert.AreEqual(expectedResult, isValid, $"Time:{time},Expected:{expectedResult}");
+
         }
     }
 
