@@ -33,59 +33,86 @@ namespace TaxiService
         {
            
 
-            /*List<Driver>drivers = new DriverStore().Drivers;*/
 
-            // Given a driver perform the trip from Edmonton to Calgary.
-           /* foreach(var driver in drivers)
-            {*/
-                Console.WriteLine("-------------------------------------------");
-                
-                ITrip trip = new Trip();
-                Console.WriteLine("Enter Start Location");
-                trip.StartLocation = Console.ReadLine();
-                Console.WriteLine("Enter End Location");
-                trip.EndLocation = Console.ReadLine();
+            //create do while loop to run the program again
+            bool runAgain = true;
 
-                if (!trip.isValidTrip())
+            do
+            {
+        
+                Logic();
+
+                Console.WriteLine("Do you want to run the program again? (Y/N)");
+                string answer = Console.ReadLine();
+                if (answer.ToUpper() == "Y")
                 {
-                    Console.WriteLine("Error: Trip should be between Edmonton and Calgary only.");
-                    return;
+                    runAgain = true;
+                }
+                else if (answer.ToUpper() == "N")
+                {
+                    runAgain = false;
+                    Console.WriteLine("Thank you for using the program.");
+                }
+                else
+                {
+                    Console.WriteLine("Invalid input. Please try again.");
                 }
 
-                IDriver driver = new Driver();
-                Console.WriteLine("Enter Driver's name");
-                driver.Name = Console.ReadLine();
-
-                Console.WriteLine("Enter Driver's age");
-                driver.Age = Convert.ToInt32(Console.ReadLine());
-
-                if (!driver.checkDriverAge())
-                {
-                    Console.WriteLine($"Error: Driver: {driver.Name}'s age should be greater than 21 to complete this trip.");
-                    return;
-                }
-               
-                Console.WriteLine("Enter Time to Complete in second");
-                trip.TimeToComplete = Convert.ToInt32(Console.ReadLine());
-
-                if (!trip.checkTimeToComplete())
-                {
-                        Console.WriteLine($"Error: Trip Time should be greater than or equal to 3 second");
-                        return;
-                }
-
-
-                trip.Status = TripStatus.NotStarted;
-                TripService tripService = new TripService(trip, driver);
-                
-                tripService.start();
-                tripService.complete();
-                Console.WriteLine("-------------------------------------------");
-
-           /* }*/
+            } while (runAgain);
+           
 
         }
 
-        
+        public static void Logic()
+        {
+            Console.WriteLine("-------------------------------------------");
+
+            ITrip trip = new Trip();
+            Console.WriteLine("Enter Start Location");
+            trip.StartLocation = Console.ReadLine();
+            Console.WriteLine("Enter End Location");
+            trip.EndLocation = Console.ReadLine();
+
+            if (!trip.isValidTrip())
+            {
+                Console.WriteLine("Error: Trip should be between Edmonton and Calgary only.");
+                return;
+            }
+
+            IDriver driver = new Driver();
+            Console.WriteLine("Enter Driver's name");
+            driver.Name = Console.ReadLine();
+
+            Console.WriteLine("Enter Driver's age");
+            driver.Age = Convert.ToInt32(Console.ReadLine());
+
+            if (!driver.checkDriverAge())
+            {
+                Console.WriteLine($"Error: Driver: {driver.Name}'s age should be greater than 21 to complete this trip.");
+                return;
+            }
+
+            Console.WriteLine("Enter Time to Complete in second");
+            trip.TimeToComplete = Convert.ToInt32(Console.ReadLine());
+
+            if (!trip.checkTimeToComplete())
+            {
+                Console.WriteLine($"Error: Trip Time should be greater than or equal to 3 second");
+                return;
+            }
+
+
+            trip.Status = TripStatus.NotStarted;
+            TripService tripService = new TripService(trip, driver);
+
+            tripService.start();
+            tripService.complete();
+            Console.WriteLine("-------------------------------------------");
+
+        }
+
+
+
+
     }
 }

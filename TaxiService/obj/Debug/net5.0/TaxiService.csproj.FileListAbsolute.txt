@@ -20,7 +20,6 @@ D:\Roshan\KBC\Taxi-service\TaxiService\bin\Debug\net5.0\TaxiService.runtimeconfi
 D:\Roshan\KBC\Taxi-service\TaxiService\bin\Debug\net5.0\TaxiService.runtimeconfig.dev.json
 D:\Roshan\KBC\Taxi-service\TaxiService\bin\Debug\net5.0\TaxiService.dll
 D:\Roshan\KBC\Taxi-service\TaxiService\bin\Debug\net5.0\TaxiService.pdb
-D:\Roshan\KBC\Taxi-service\TaxiService\obj\Debug\net5.0\TaxiService.csproj.AssemblyReference.cache
 D:\Roshan\KBC\Taxi-service\TaxiService\obj\Debug\net5.0\TaxiService.GeneratedMSBuildEditorConfig.editorconfig
 D:\Roshan\KBC\Taxi-service\TaxiService\obj\Debug\net5.0\TaxiService.AssemblyInfoInputs.cache
 D:\Roshan\KBC\Taxi-service\TaxiService\obj\Debug\net5.0\TaxiService.AssemblyInfo.cs
@@ -30,3 +29,4 @@ D:\Roshan\KBC\Taxi-service\TaxiService\obj\Debug\net5.0\refint\TaxiService.dll
 D:\Roshan\KBC\Taxi-service\TaxiService\obj\Debug\net5.0\TaxiService.pdb
 D:\Roshan\KBC\Taxi-service\TaxiService\obj\Debug\net5.0\TaxiService.genruntimeconfig.cache
 D:\Roshan\KBC\Taxi-service\TaxiService\obj\Debug\net5.0\ref\TaxiService.dll
+D:\Roshan\KBC\Taxi-service\TaxiService\obj\Debug\net5.0\TaxiService.sourcelink.json
